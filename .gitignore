@@ -1,0 +1,12 @@
+# Never publish personal data or generated files
+*.pdf
+*.aux
+*.log
+*.out
+*.synctex.gz
+base_resume_personal.tex
+resume/
+cover letter/
+resume_pdf/
+cover letter_pdf/
+.env

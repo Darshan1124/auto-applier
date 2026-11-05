@@ -1,0 +1,193 @@
+% =====================================================================
+% BASE RESUME TEMPLATE  (all names, companies, schools and text below are DUMMY)
+%
+% FORMAT IS FIXED. Replace content only; never change the preamble, the margins,
+% the custom commands, the section order, or the spacing commands.
+%   - Every \resumeItem and every Technical Skills row must fit on ONE line
+%     (check with scripts/measure_width.py, then confirm in a real compile).
+%   - The whole resume must be exactly ONE page with no wasted space at the bottom.
+%   - Write in plain, everyday words (developed, built, fixed, tested, improved).
+%     Avoid jargon in the BASE resume. When tailoring, mirror the job posting's own
+%     terms only where they are true for the person.
+%   - Escape LaTeX specials: \& \% \$ \# \_   (en dash is written --)
+% See references/resume-rules.md for the full rule set.
+% =====================================================================
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.62in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.22in}
+\addtolength{\topmargin}{-.72in}
+\addtolength{\textheight}{1.45in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, itemsep=-1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Alex Morgan} \\ \vspace{5pt}
+    \small
+    \faMobile\ +00 0000 000000 \hspace{10pt} $|$ \hspace{10pt}
+    \faEnvelope\ \href{mailto:alex.morgan@example.com}{\underline{alex.morgan@example.com}} \\
+    \vspace{3pt}
+    \faLinkedinSquare\ \href{https://linkedin.com/in/alex-morgan-example}{\underline{alex-morgan-example}} \hspace{10pt} $|$ \hspace{10pt}
+    \faGithub\ \href{https://github.com/alexmorgan-example}{\underline{alexmorgan-example}} \hspace{10pt} $|$ \hspace{10pt}
+    \faCode\ \href{https://leetcode.com/u/alexmorgan-example/}{\underline{alexmorgan-example}}
+\end{center}
+
+%-----------SKILLS-----------
+% Six rows, one line each. Label in bold, values comma-separated.
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: Python, Java, SQL, JavaScript} \\
+    \textbf{Frameworks}{: Spring Boot, Django, Flask, React, Angular} \\
+    \textbf{Databases}{: PostgreSQL, MySQL, Redis, MongoDB} \\
+    \textbf{Cloud/DevOps}{: AWS, Kubernetes, Docker, CI/CD, Git} \\
+    \textbf{Testing}{: JUnit, PyTest, Unit Testing, REST APIs, API Documentation} \\
+    \textbf{Concepts}{: Data Structures, Algorithms, System Design, Debugging, Problem Solving, Teamwork, Code Review}
+    }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+% Newest first. Each \resumeItem is ONE line (about 95-117 characters).
+\section{Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Intern}{Month YYYY -- Present}
+      {Example Corp Ltd.}{}
+      \resumeItemListStart
+        \resumeItem{Developed new features for internal tools used by the engineering team, working from clear requirements.}
+        \resumeItem{Worked with a small team to build, test, and release updates to existing software on a regular schedule.}
+        \resumeItem{Used AI-assisted coding tools such as \textbf{Tool A} and \textbf{Tool B} to speed up everyday development work.}
+        \resumeItem{Worked closely with engineers and stakeholders to understand needs and deliver improvements across teams.}
+        \resumeItem{Found and fixed bugs by reading logs, reproducing issues, and tracing each problem back to its cause.}
+        \resumeItem{Wrote scripts to automate repetitive tasks and checked the results across several projects.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Month YYYY -- Month YYYY}
+      {Sample Tech Inc.}{City, Country (Remote)}
+      \resumeItemListStart
+        \resumeItem{Developed backend services using \textbf{Framework A} and \textbf{Cache B} to support busy, high-traffic applications.}
+        \resumeItem{Built and maintained \textbf{REST APIs} that let different services share data in a clear and reliable way.}
+        \resumeItem{Improved the speed of slow pages and reports by rewriting database queries and cleaning up the code.}
+        \resumeItem{Took part in code reviews, wrote automated tests, and helped release new versions of the software.}
+        \resumeItem{Fixed slow and unreliable parts of the code so the application ran smoothly for many users at once.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Month YYYY -- Month YYYY}
+      {Placeholder Consulting Services}{City, Country}
+      \resumeItemListStart
+        \resumeItem{Developed backend applications in \textbf{Language A}, keeping the code clean, reliable, and easy to maintain.}
+        \resumeItem{Improved database queries and API code to make applications faster and easier to work with.}
+        \resumeItem{Deployed applications using \textbf{Cloud A} and \textbf{Tool B}, and managed the test and live environments.}
+        \resumeItem{Helped set up automated build and release steps, and wrote \textbf{Test Framework C} tests to catch bugs early.}
+        \resumeItem{Investigated problems in the live system, found the cause, and fixed them to keep the service stable.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+% No bullets and no module lists in Education.
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Example University}{Month YYYY -- Month YYYY}
+      {MSc in Example Subject}{City, Country}
+
+    \resumeSubheading
+      {Sample Institute of Technology}{Month YYYY -- Month YYYY}
+      {Bachelor of Engineering in Example Discipline}{City, Country}
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in]
+    \item \textbf{Sample Certification Program} -- Example Organisation
+\end{itemize}
+%-----------PROJECTS-----------
+% Heading = bold title, then $|$ and an italic tech list. Must also fit on ONE line.
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+        {\textbf{Example Project One} $|$ \emph{Tech A, Tech B, Tech C, Tech D, Tech E, Tech F}}{}
+        \resumeItemListStart
+            \resumeItem{Built a web application that sends user requests to the best available server based on current \textbf{server load}.}
+            \resumeItem{Added automatic checks that detect a failed server and move requests over to a working one.}
+            \resumeItem{Used past usage data to predict busy periods and prepare extra capacity ahead of time.}
+            \resumeItem{Split the application into small, clear modules for receiving requests, making decisions, and picking a server.}
+            \resumeItem{Added \textbf{monitoring, logging, and dashboards} so the team can see how the system is running.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Example Project Two} $|$ \emph{Tech A, Tech G, Tech H, Tech I, Tech C}}{}
+        \resumeItemListStart
+            \resumeItem{Built a tool that predicts how much work the system will receive and shares resources between services.}
+            \resumeItem{Used \textbf{forecasting, pattern detection, and graph methods} to find slow spots and improve how work is shared.}
+            \resumeItem{Added simple rules to handle important tasks first while keeping costs and resource use balanced.}
+            \resumeItem{Built a feedback loop that uses recent and past data to improve future decisions.}
+            \resumeItem{Applied \textbf{rule-based planning and flexible scheduling} to cope with changing workloads.}
+            \resumeItem{Tested the tool with different workloads and measured speed, capacity, and resource use.}
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
