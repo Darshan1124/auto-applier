@@ -17,7 +17,7 @@ Detail lives in `references/`. Read the matching file before each phase:
 | Filling the application form in Chrome | `references/apply-workflow.md` |
 | Cover letter | `references/cover-letter.md` |
 
-Templates and tools: `templates/base_resume.tex` and `templates/base_cover_letter.tex` (dummy data, the exact formats to copy), `scripts/measure_width.py` (line-width checker).
+Templates and helper script: `templates/base_resume.tex` and `templates/base_cover_letter.tex` (dummy data, the exact formats to copy), `scripts/measure_width.py` (line-width checker).
 
 ## Hard rules (never relax these)
 
