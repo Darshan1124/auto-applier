@@ -1,8 +1,8 @@
-﻿# applier
+# auto-applier
 
 ### Tired of applying to jobs and answering the same questions again and again?
 
-**This is the solution.** From making a job-specific resume to filling in the application, `applier` does the repetitive work for you. You just give it **the link to the job description**, and it takes care of the rest. You only step in to sign in, answer the legal questions, and press Submit.
+**This is the solution.** From making a job-specific resume to filling in the application, `auto-applier` does the repetitive work for you. You just give it **the link to the job description**, and it takes care of the rest. You only step in to sign in, answer the legal questions, and press Submit.
 
 ---
 
@@ -71,23 +71,23 @@ Open Claude Code and say:
 
 > I want the skill from this repo: https://github.com/Darshan1124/auto-applier
 
-Claude will download the repo and put it in your skills folder (`~/.claude/skills/applier`, on Windows `C:\Users\<you>\.claude\skills\applier`) for you. Then start a new session and continue with [First-time setup](#first-time-setup).
+Claude will download the repo and put it in your skills folder (`~/.claude/skills/auto-applier`, on Windows `C:\Users\<you>\.claude\skills\auto-applier`) for you. Then start a new session and continue with [First-time setup](#first-time-setup).
 
 ### Option B: clone straight into your skills folder
 
 Windows (PowerShell):
 
 ```powershell
-git clone https://github.com/Darshan1124/auto-applier.git "$env:USERPROFILE\.claude\skills\applier"
+git clone https://github.com/Darshan1124/auto-applier.git "$env:USERPROFILE\.claude\skills\auto-applier"
 ```
 
 macOS / Linux:
 
 ```bash
-git clone https://github.com/Darshan1124/auto-applier.git ~/.claude/skills/applier
+git clone https://github.com/Darshan1124/auto-applier.git ~/.claude/skills/auto-applier
 ```
 
-The folder must be named `applier` and contain `SKILL.md` at its top level.
+The folder must be named `auto-applier` and contain `SKILL.md` at its top level.
 
 ### Option C: clone anywhere, then copy
 
@@ -95,17 +95,17 @@ The folder must be named `applier` and contain `SKILL.md` at its top level.
 git clone https://github.com/Darshan1124/auto-applier.git
 ```
 
-Copy the whole cloned folder to `~/.claude/skills/applier` (Windows: `C:\Users\<you>\.claude\skills\applier`), renaming it to `applier`. The folder must contain `SKILL.md` at its top level.
+Copy the whole cloned folder to `~/.claude/skills/auto-applier` (Windows: `C:\Users\<you>\.claude\skills\auto-applier`), renaming it to `auto-applier`. The folder must contain `SKILL.md` at its top level.
 
 ### Option D: project-level install
 
-Put the folder in your project at `.claude/skills/applier` to make the skill available only in that project.
+Put the folder in your project at `.claude/skills/auto-applier` to make the skill available only in that project.
 
 ### Verify
 
-Start a new Claude Code session. Type `/` and look for `applier`, or just ask: "use the applier skill". If it is not listed, check that `SKILL.md` sits directly inside the `applier` folder and restart the session.
+Start a new Claude Code session. Type `/` and look for `auto-applier`, or just ask: "use the auto-applier skill". If it is not listed, check that `SKILL.md` sits directly inside the `auto-applier` folder and restart the session.
 
-To update later, run `git pull` inside the skill folder, or ask Claude to "update the applier skill from its repo".
+To update later, run `git pull` inside the skill folder, or ask Claude to "update the auto-applier skill from its repo".
 
 ## First-time setup
 
@@ -127,12 +127,12 @@ After this, setup is finished and every job takes one request.
 In your working folder, give Claude a job:
 
 ```
-/applier apply to https://example.com/jobs/12345
+/auto-applier apply to https://example.com/jobs/12345
 ```
 
 or in plain words:
 
-> Use applier to tailor my resume for this job and apply: https://example.com/jobs/12345
+> Use auto-applier to tailor my resume for this job and apply: https://example.com/jobs/12345
 
 You can also paste the job description text if the page needs a login.
 
@@ -242,7 +242,7 @@ It reports each bullet, skills row and project heading with an estimated width i
 
 | Problem | Fix |
 |---|---|
-| `applier` not listed after install | `SKILL.md` must be directly inside the `applier` folder. Restart the Claude session. |
+| `auto-applier` not listed after install | `SKILL.md` must be directly inside the `auto-applier` folder. Restart the Claude session. |
 | Claude says Chrome tools are not available | Install and sign in to the Claude in Chrome extension, keep Chrome open, restart the session or run `/mcp`. |
 | A site is blocked or Claude is waiting | Approve the site in the extension prompt. Claude will not work around a refusal. |
 | Overleaf preview shows the old PDF after switching files | The first Recompile after changing the main document can be stale. Wait 8 to 10 seconds and press Recompile again. |
@@ -268,7 +268,7 @@ It reports each bullet, skills row and project heading with an estimated width i
 ```bash
 git init
 git add .
-git commit -m "Add applier skill"
+git commit -m "Add auto-applier skill"
 git branch -M main
 git remote add origin https://github.com/Darshan1124/auto-applier.git
 git push -u origin main

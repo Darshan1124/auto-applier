@@ -1,9 +1,9 @@
 ---
-name: applier
+name: auto-applier
 description: Tailor a strict one-page LaTeX resume (and optional cover letter) to a specific job posting from the user's saved base resume, verify it in Overleaf, save the .tex file, and drive the job application in Chrome. Use when the user wants to apply to a job, tailor or refresh a resume, set up their base resume, or gives a job URL or job description.
 ---
 
-# applier
+# auto-applier
 
 Turns a job posting into a tailored, one-page, ATS-keyword-dense LaTeX resume (plus a cover letter if the job asks for one), then helps submit the application. The resume format is fixed. Only the content changes.
 
