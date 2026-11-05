@@ -1,5 +1,11 @@
 ﻿# applier
 
+### Tired of applying to jobs and answering the same questions again and again?
+
+**This is the solution.** From making a job-specific resume to filling in the application, `applier` does the repetitive work for you. You just give it **the link to the job description**, and it takes care of the rest. You only step in to sign in, answer the legal questions, and press Submit.
+
+---
+
 A [Claude Code](https://claude.com/claude-code) skill that turns a job posting into a **tailored, strictly one-page LaTeX resume** (and a cover letter when the job asks for one), checks it with a real compile in Overleaf, saves the files in a tidy folder layout, and helps you submit the application in Chrome.
 
 You give it a job link. It reads the job description, asks whether to go **Normal** or **Lethal**, rewrites your base resume for that job, verifies the result, and gets the application ready for you to review and submit.
