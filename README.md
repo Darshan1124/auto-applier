@@ -59,7 +59,15 @@ You do **not** need LaTeX installed locally. Compiling happens in Overleaf.
 
 ## Install
 
-### Option A: clone straight into your skills folder (recommended)
+### Option A: easiest way, ask Claude to install it
+
+Open Claude Code and say:
+
+> I want the skill from this repo: https://github.com/Darshan1124/auto-applier
+
+Claude will download the repo and put it in your skills folder (`~/.claude/skills/applier`, on Windows `C:\Users\<you>\.claude\skills\applier`) for you. Then start a new session and continue with [First-time setup](#first-time-setup).
+
+### Option B: clone straight into your skills folder
 
 Windows (PowerShell):
 
@@ -73,17 +81,17 @@ macOS / Linux:
 git clone https://github.com/Darshan1124/auto-applier.git ~/.claude/skills/applier
 ```
 
-Replace `<your-username>` with the account that hosts the repo.
+The folder must be named `applier` and contain `SKILL.md` at its top level.
 
-### Option B: clone anywhere, then copy
+### Option C: clone anywhere, then copy
 
 ```bash
 git clone https://github.com/Darshan1124/auto-applier.git
 ```
 
-Copy the whole `applier` folder to `~/.claude/skills/applier` (Windows: `C:\Users\<you>\.claude\skills\applier`). The folder must contain `SKILL.md` at its top level.
+Copy the whole cloned folder to `~/.claude/skills/applier` (Windows: `C:\Users\<you>\.claude\skills\applier`), renaming it to `applier`. The folder must contain `SKILL.md` at its top level.
 
-### Option C: project-level install
+### Option D: project-level install
 
 Put the folder in your project at `.claude/skills/applier` to make the skill available only in that project.
 
@@ -91,7 +99,7 @@ Put the folder in your project at `.claude/skills/applier` to make the skill ava
 
 Start a new Claude Code session. Type `/` and look for `applier`, or just ask: "use the applier skill". If it is not listed, check that `SKILL.md` sits directly inside the `applier` folder and restart the session.
 
-To update later, run `git pull` inside the skill folder.
+To update later, run `git pull` inside the skill folder, or ask Claude to "update the applier skill from its repo".
 
 ## First-time setup
 
