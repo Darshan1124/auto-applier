@@ -1,8 +1,10 @@
 # auto-applier skill for Claude
 
+## Just paste the job link. The skill does the rest.
+
 ### Tired of applying to jobs and answering the same questions again and again?
 
-**This is the solution.** From making a job-specific resume to filling in the application, the **auto-applier skill for Claude** does the repetitive work for you. You just give Claude **the link to the job description**, and the skill takes care of the rest. You only step in to sign in, answer the legal questions, and press Submit.
+**This is the solution.** From making a job-specific resume to filling in the application, the **auto-applier skill for Claude** does the repetitive work for you. You only step in to sign in, answer the legal questions, and press Submit.
 
 ---
 
